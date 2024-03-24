@@ -1,11 +1,11 @@
 import React from 'react';
-import mainImg from '../assets/images/image-web-3-desktop.jpg';
+
 import '../styles/article.css';
 export const Article: React.FC = () => {
   return (
     <article>
       <div className='article-heading-wrapper'>
-        <img src={mainImg} alt={mainImg} className='main-img' />
+        <div className='main-img' />
         <div className='article-primary-heading'>
           <div className='article-heading'>
             <h2>
