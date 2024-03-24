@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+article {
+  width: 90vw;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  margin: 50px auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.article-types {
+  width: 90vw;
+  margin: 50px auto;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.type-1 {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 20px;
+}
+.types-imgs {
+  width: 100px;
+
+  display: block;
+}
+.type-2 {
+  width: 40%;
+  padding-left: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.type-3 {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.types-wrapper h2 {
+  font-size: 32px;
+  color: #c5c3cd;
+  margin-bottom: 5px;
+}
+/* 320px, 480px, 768px, 1024px, and 1200px. */
+
+@media (max-width: 768px) {
+  .article-types {
+    flex-direction: column;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .type-1 {
+    width: 100%;
+    padding-left: 0;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .type-2 {
+    width: 100%;
+    padding-left: 0;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .type-3 {
+    width: 100%;
+    padding-left: 0;
+  }
 }

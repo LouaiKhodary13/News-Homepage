@@ -1,0 +1,126 @@
+.article-heading-wrapper {
+  width: 70vw;
+  height: 100%;
+}
+.main-img {
+  width: 100%;
+  display: block;
+  height: 350px;
+  background-image: url('../assets//images/image-web-3-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.article-primary-heading {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.article-heading {
+  width: 50%;
+  height: 100%;
+  font-size: 32px;
+}
+.article-info {
+  width: 50%;
+}
+.article-info p {
+  color: #9f9e9c;
+  font-size: 20px;
+  font-weight: 400;
+}
+.btn {
+  margin-top: 10px;
+  background-color: #f15d51;
+  width: 250px;
+  padding: 20px;
+  color: #fce6df;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.article-sidebar {
+  width: 30vw;
+  background-color: #00001a;
+  height: 100%;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.article-new {
+  color: #dfa352;
+  font-size: 32px;
+}
+.article-sidebar-item {
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.article-sidebar-item h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 800;
+}
+.article-sidebar-item p {
+  font-size: 16px;
+  color: #9596aa;
+  margin-top: 10px;
+}
+.border {
+  width: 100%;
+  margin: 0 auto;
+  border: 0.2px solid #9596aa;
+}
+
+@media (max-width: 1024px) {
+  .article-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .article-sidebar-item {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+  }
+  .article-sidebar {
+    width: 100%;
+  }
+  .article-heading-wrapper {
+    width: 92vw;
+  }
+  .main-img {
+    background-image: url('../assets//images/image-web-3-mobile.jpg');
+  }
+}
+@media (max-width: 480px) {
+  .article-primary-heading {
+    flex-direction: column;
+  }
+  .article-heading {
+    width: 100%;
+  }
+  .article-info {
+    width: 100%;
+  }
+  .main-img {
+    background-image: url('../assets//images/image-web-3-mobile.jpg');
+  }
+}
+@media (max-width: 320px) {
+  .main-img {
+    background-image: url('../assets//images/image-web-3-mobile.jpg');
+  }
+}
